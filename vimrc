@@ -1,15 +1,19 @@
-" Allow GetLatestVimScripts to auto-install new scripts
-let g:GetLatestVimScripts_allowautoinstall=1
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+if has("autocmd")
+	filetype plugin indent on
+endif
 
 " Latex-Suite Settings
 "
 "
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
-filetype plugin on
+"filetype plugin on
 
 " IMPORTANT: win32 users will need to have 'shellslash' set so that latex
 " can be called correctly.
-set shellslash
+"set shellslash
 
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a singe file. This will confuse Latex-Suite. Set your grep
@@ -17,7 +21,7 @@ set shellslash
 set grepprg=grep\ -nH\ $*
 
 " OPTIONAL: This enables automatic indentation as you type.
-filetype indent on
+"filetype indent on
 
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
