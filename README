@@ -1,0 +1,9 @@
+Installation:
+
+	git clone git://github.com/<+ user +>/dotfiles.git ~/.dotfiles
+
+Create symlinks:
+
+	ruby ~/.dotfiles/install.rb *
+
+
