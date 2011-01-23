@@ -137,3 +137,59 @@ snippet \vm
 	\begin{vmatrix}
 		${1}
 	\end{vmatrix}${2}
+snippet hw
+	\documentclass{assignment}
+
+	\coursetitle{${1}}
+	\courselabel{${2}}
+	\exercisesheet{${3}}{${4}}
+	\student{${5}}
+	\semester{${6}}
+	\date{${7}}
+	%usepackage[pdftex]{graphicx}
+	%usepackage{subfigure}
+
+	\begin{document}
+		${8}
+	\end{document}
+snippet prob
+	\begin{problem}
+		${1}
+
+		\begin{answer}
+			${2}
+		\end{answer}
+	\end{problem}
+snippet enum
+	\begin{problem}
+		${1}
+
+		\begin{enumerate}
+			\item ${2}
+			\begin{answer}
+				${3}
+			\end{answer}
+			${4}
+		\end{enumerate}
+	\end{problem}${5}
+snippet item
+	\item ${1}
+	\begin{answer}
+		${2}
+	\end{answer}
+	${3}
+snippet notes
+	\documentclass{Notes}
+
+	\title{${1}}
+	\subject{${2}}
+	\author{${3}}
+	\email{${4}}
+	\speaker{${5}}
+	\date{${6}}{${7}}{${8}}
+	\dateend{${9}}{${10}}{${11}}
+	\place{${12}}
+
+	\begin{document}
+	${13}
+	\end{document}
