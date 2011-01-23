@@ -4,6 +4,11 @@ Installation:
 
 Create symlinks:
 
-	ruby ~/.dotfiles/install.rb *
+	~/.dotfiles/install
 
+Commit changes back to git
+
+	git add <whatever>
+	git commit -m "Changed whatever"
+	git push origin master
 

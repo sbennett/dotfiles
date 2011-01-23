@@ -27,4 +27,6 @@ unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
+# Initiate colored prompt
+promptinit
 PROMPT='%n:%~ )'
