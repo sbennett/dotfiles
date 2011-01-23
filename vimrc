@@ -9,7 +9,7 @@ endif
 "
 "
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
-"filetype plugin on
+filetype plugin on
 
 " IMPORTANT: win32 users will need to have 'shellslash' set so that latex
 " can be called correctly.
@@ -21,7 +21,7 @@ endif
 set grepprg=grep\ -nH\ $*
 
 " OPTIONAL: This enables automatic indentation as you type.
-"filetype indent on
+filetype indent on
 
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
@@ -32,5 +32,4 @@ let g:tex_flavor='latex'
 "
 " End Latex-Suite Settings
 
-" Sets MapLeader to '\'
-let mapleader = '\'
+inoremap ;; <esc>
